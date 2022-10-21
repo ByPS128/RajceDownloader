@@ -1,0 +1,16 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>disable</Nullable>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+		<LangVersion>10.0</LangVersion>
+		<Description>ByPS's Power Software</Description>
+		<Company>ByPS's Power Software</Company>
+		<Copyright>Copyright © 2022, ByPS, Czech Republic</Copyright>
+		<NeutralLanguage>en</NeutralLanguage>
+		<AssemblyName>RajceDownloader.$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>RajceDownloader.$(MSBuildProjectName)</RootNamespace>
+	</PropertyGroup>
+</Project>

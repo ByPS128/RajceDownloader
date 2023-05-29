@@ -52,12 +52,12 @@ public static class Program
             AppOptions appOptions = new();
             _configuration.Bind(nameof(AppOptions), appOptions);
 
-            foreach (string album in appOptions.Albums)
+            foreach (string album in appOptions.Albums ?? Array.Empty<string>())
             {
                 await DownloadAlbumAsync(new Uri(album), cancellationToken);
             }
 
-            foreach (string video in appOptions.Videos)
+            foreach (string video in appOptions.Videos ?? Array.Empty<string>())
             {
                 await DownloadVideoAsync(new Uri(video), cancellationToken);
             }

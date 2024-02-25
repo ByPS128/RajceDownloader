@@ -6,6 +6,8 @@ namespace RajceDownloader.Main;
 
 public sealed class AppOptions
 {
+    public bool SkipExistingFiles { get; init; }
+    public int MaxDegreeOfParallelDownload { get; init; }
     public string[] Albums { get; init; }
     public string[] Videos { get; init; }
 }
